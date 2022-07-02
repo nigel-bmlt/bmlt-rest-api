@@ -22,7 +22,8 @@ class FortifyServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        //
+        // turn off all the default fortify routes
+        Fortify::ignoreRoutes();
     }
 
     /**
